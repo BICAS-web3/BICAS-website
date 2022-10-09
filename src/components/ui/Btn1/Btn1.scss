@@ -1,0 +1,35 @@
+@import "../../../globalStyles";
+
+
+
+.Btn1 {
+    padding: 25px*$vw*0.8 82px*$vw*0.8;
+    border-radius: 20px*$vw*0.8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: 'Atyp Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px*$vw*0.8;
+    line-height: 29px*$vw*0.8;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .Btn1 {
+        padding: 25px*$TELvw*0.8*0.5 82px*$TELvw*0.8*0.5;
+        border-radius: 20px*$TELvw*0.8*0.5;
+        font-size: 24px*$TELvw*0.8*0.5;
+        line-height: 29px*$TELvw*0.8*0.5;
+    }
+}

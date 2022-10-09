@@ -1,0 +1,236 @@
+@import "../../../globalStyles";
+
+
+
+.SolidProduct {
+    width: 100%;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.SolidProduct_synergy {
+    width: 976px*$vw;
+    margin: 185px*$vw 0 100px*$vw 0;
+    position: relative;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    .SolidProduct_synergy_bg {
+        width: 220%;
+        height: 220%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .title1 {
+        width: 419px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 75px*$vw;
+        line-height: 100.5%;
+        color: #FFFFFF;
+        align-self: flex-start;
+    }
+    .title2 {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px*$vw;
+        line-height: 109.5%;
+        text-align: center;
+        letter-spacing: 1.715em;
+        color: #FE0524;
+        margin: 38px*$vw 0;
+    }
+    .title3 {
+        width: 541px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px*$vw;
+        line-height: 101%;
+        color: #FFFFFF;
+        align-self: flex-end;
+    }
+}
+
+.SolidProduct_gambling {
+    width: 100%;
+    padding: 0 140px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.SolidProduct_row1,
+.SolidProduct_row2 {
+    width: 100%;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+}
+.SolidProduct_row1 {
+    .left {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px*$vw;
+        line-height: 54px*$vw;
+        color: #FFFFFF;
+    }
+    .right {
+        width: 127px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px*$vw;
+        line-height: 109.5%;
+        text-align: right;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        padding-right: 16px*$vw;
+        padding-bottom: 16px*$vw;
+        border-right: 0.5px*$vw solid #FFFFFF;
+    }
+}
+.SolidProduct_left {
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    .amount {
+        .num {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 130px*$vw;
+            line-height: 181px*$vw;
+            letter-spacing: -0.055em;
+            color: #FE0524;
+            margin-right: 10px*$vw;
+        }
+        .text {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px*$vw;
+            line-height: 65px*$vw;
+            color: #FFFFFF;
+        }
+    }
+    .underNum_text {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px*$vw;
+        line-height: 25px*$vw;
+        color: #FFFFFF;
+    }
+}
+.SolidProduct_right {
+    width: 479px*$vw;
+
+    .text {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px*$vw;
+        line-height: 35px*$vw;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .SolidProduct {
+        width: 100%;
+        overflow: hidden;
+    }
+    .SolidProduct_synergy {
+        width: 976px*$TELvw*0.29;
+        margin: 85px*$TELvw 0 100px*$TELvw 0;
+
+        .SolidProduct_synergy_bg {
+            width: 300%;
+        }
+
+        .title1 {
+            width: 182px*$TELvw;
+            font-size: 35px*$TELvw;
+            line-height: 35px*$TELvw;
+            font-weight: 500;
+        }
+        .title2 {
+            font-size: 12px*$TELvw;
+            line-height: 13px*$TELvw;
+            font-weight: 500;
+            margin: 80px*$TELvw 0;
+        }
+        .title3 {
+            width: 541px*$TELvw*0.34;
+            font-size: 30px*$TELvw;
+            line-height: 30px*$TELvw;
+        }
+    }
+
+    .SolidProduct_gambling {
+        width: 100%;
+        padding: 0 140px*$vw;
+    }
+    .SolidProduct_row2 {
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+    }
+    .SolidProduct_row1 {
+        margin: 20px*$TELvw 0;
+        .left {
+            font-size: 25px*$TELvw;
+            line-height: 24px*$TELvw;
+        }
+        .right {
+            width: 127px*$TELvw*0.5;
+            font-size: 21px*$TELvw*0.5;
+            padding-right: 16px*$TELvw*0.5;
+            padding-bottom: 16px*$TELvw*0.5;
+            border-right: 0.5px*$TELvw*0.5 solid #FFFFFF;
+        }
+    }
+    .SolidProduct_left {
+        @include flex(flex, row, nowrap, space-between, flex-end, unset);
+
+        .amount {
+            .num {
+                font-size: 130px*$TELvw*0.35;
+                line-height: 181px*$TELvw*0.35;
+                margin-right: 10px*$TELvw*0.35;
+            }
+            .text {
+                font-size: 45px*$TELvw*0.35;
+                line-height: 65px*$TELvw*0.35;
+            }
+        }
+        .underNum_text {
+            width: 123px*$TELvw;
+            font-size: 8px*$TELvw;
+            line-height: 11px*$TELvw;
+            text-align: right;
+            margin-bottom: 10px*$TELvw;
+        }
+    }
+    .SolidProduct_right {
+        width: 289px*$TELvw;
+        align-self: flex-end;
+        margin-top: 20px*$TELvw;
+
+        .text {
+            font-size: 15px*$TELvw;
+            line-height: 20px*$TELvw;
+            text-align: start;
+        }
+    }
+}

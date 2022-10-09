@@ -1,0 +1,310 @@
+@import "../../globalStyles";
+
+
+
+.Footer {
+    width: 100%;
+    padding: 60px*$vw 60px*$vw 20px*$vw;
+    background-color: #000;
+
+    @include flex(flex, row, nowrap, space-between, flex-start, unset);
+
+    .column {
+        width: fit-content;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+        .logo {
+            width: 120px*$vw;
+            height: 107px*$vw;
+            margin-bottom: 78px*$vw;
+            margin-top: 60px*$vw;
+            align-self: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .bicasEcosystem {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px*$vw;
+            line-height: 25px*$vw;
+            letter-spacing: 0.325em;
+            color: #FFFFFF;
+            margin-bottom: 8px*$vw;
+        }
+        .copyright {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px*$vw;
+            line-height: 20px*$vw;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .FNavTitle {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px*$vw;
+            line-height: 23px*$vw;
+            color: #FFFFFF;
+            margin-bottom: 22px*$vw;
+        }
+
+        &>a {
+            margin-bottom: 16px*$vw;
+        }
+
+        .FNavLink {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px*$vw;
+            line-height: 20px*$vw;
+            color: #FFFFFF;
+        }
+        .FNav_Newsletter_text {
+            margin-bottom: 20px*$vw;
+        }
+        .privacyPolicy {
+            margin-top: 127px*$vw;
+        }
+
+        .FNavSocialTitle {
+            margin-top: 108px*$vw;
+        }
+
+        .socials {
+            width: fit-content;
+
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+
+            gap: 42px*$vw;
+
+            .footer_social {
+                width: 31px*$vw;
+                height: 31px*$vw;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .subscribeForm {
+            width: 311px*$vw;
+            position: relative;
+
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+
+            input {
+                width: 100%;
+                height: 64px*$vw;
+                outline: none;
+                border: 1px*$vw solid #FE0524;
+                border-radius: 14px*$vw;
+                background-color: transparent;
+                padding-left: 16px*$vw;
+                padding-right: 26px*$vw;
+
+                font-family: 'Atyp Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px*$vw;
+                line-height: 17px*$vw;
+                color: #fff;
+
+                &::placeholder {
+                    font-family: 'Atyp Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px*$vw;
+                    line-height: 17px*$vw;
+                    color: #434343;
+                }
+            }
+            button {
+                width: 20px*$vw;
+                height: 30px*$vw;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+                position: absolute;
+                right: 26px*$vw;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .designBy {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px*$vw;
+            line-height: 17px*$vw;
+            letter-spacing: 0.325em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 102px*$vw;
+            align-self: flex-end;
+        }
+    }
+    .colsubscribeForm {
+        width: 311px*$vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Footer {
+        width: 100%;
+        height: 450px*$TELvw;
+        padding: 38px*$TELvw 20px*$TELvw 20px*$TELvw;
+        position: relative;
+
+        .colLogo_mb,
+        .colExplore_mb,
+        .colDevelopers_mb,
+        .colContacts_mb,
+        .colForm_mb {
+            position: absolute;
+            right: 0;
+        }
+        .colLogo_mb {
+            left: 15px*$TELvw;
+            bottom: 18px*$TELvw;
+        }
+        .colExplore_mb {
+            top: 38px*$TELvw;
+            left: 23px*$TELvw;
+        }
+        .colDevelopers_mb {
+            top: 38px*$TELvw;
+            left: 141px*$TELvw;
+        }
+        .colContacts_mb {
+            top: 38px*$TELvw;
+            left: 263px*$TELvw;
+        }
+        .colForm_mb {
+            top: 210px*$TELvw;
+            left: 23px*$TELvw;
+        }
+
+        .column {
+            .logo {
+                width: 51px*$TELvw;
+                height: 46px*$TELvw;
+                margin-bottom: 9px*$TELvw;
+                margin-top: 60px*$vw;
+            }
+
+            .bicasEcosystem {
+                font-size: 7px*$TELvw;
+                line-height: 10px*$TELvw;
+                margin-bottom: 4px*$TELvw;
+            }
+            .copyright {
+                font-size: 6px*$TELvw;
+                line-height: 8px*$TELvw;
+            }
+
+            .FNavTitle {
+                font-size: 12px*$TELvw;
+                line-height: 17px*$TELvw;
+                margin-bottom: 10px*$TELvw;
+            }
+
+            &>a {
+                margin-bottom: 6px*$TELvw;
+            }
+
+            .FNavLink {
+                font-size: 10px*$TELvw;
+                line-height: 15px*$TELvw;
+            }
+            .FNav_Newsletter_text {
+                width: 100%;
+                margin-bottom: 6px*$TELvw;
+            }
+            .privacyPolicy {
+                margin-top: 10px*$vw;
+            }
+
+            .FNavSocialTitle {
+                margin-top: 70px*$TELvw;
+            }
+
+            .socials {
+                width: fit-content;
+
+                @include flex(flex, column, nowrap, flex-start, center, unset);
+
+                gap: 42px*$TELvw;
+
+                .footer_social {
+                    width: 20px*$TELvw;
+                    height: 22px*$TELvw;
+                    padding-left: 15px*$TELvw;
+                }
+            }
+
+            .subscribeForm {
+                width: 100%;
+                height: 31px*$TELvw;
+                position: relative;
+
+                @include flex(flex, row, nowrap, flex-start, center, unset);
+
+                input {
+                    height: 100%;
+                    border: 1px*$TELvw solid #FE0524;
+                    border-radius: 7px*$TELvw;
+                    padding-left: 8px*$TELvw;
+                    padding-right: 26px*$TELvw;
+                    font-size: 12px*$TELvw*0.8;
+                    line-height: 17px*$TELvw*0.8;
+
+                    &::placeholder {
+                        font-size: 12px*$TELvw*0.8;
+                        line-height: 17px*$TELvw*0.8;
+                    }
+                }
+                button {
+                    width: 20px*$TELvw*0.6;
+                    height: 30px*$TELvw*0.6;
+                    right: 26px*$TELvw*0.3;
+                }
+            }
+            .designBy {
+                font-size: 8px*$TELvw;
+                line-height: 10px*$TELvw;
+                position: absolute;
+                bottom: -130px*$TELvw;
+                right: -140px*$TELvw;
+            }
+        }
+        .colsubscribeForm {
+            width: 192px*$TELvw;
+        }
+    }
+}

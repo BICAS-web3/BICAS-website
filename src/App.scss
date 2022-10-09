@@ -1,0 +1,36 @@
+@import "./globalStyles";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    width: 1449px*$vw;
+    font-family: 'Atyp Display';
+    overflow-x: hidden;
+    background-color: #1C1C1C;
+}
+main {
+    padding-top: 197px*$vw;
+    overflow: hidden;
+}

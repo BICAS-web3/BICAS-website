@@ -1,0 +1,103 @@
+@import "../../globalStyles";
+
+
+
+.main {
+    position: relative;
+    padding-top: 200px*$vw;
+}
+.main_circleBlur {
+    width: 940px*$vw;
+    height: 943px*$vw;
+    background: #DA0C28;
+    filter: blur(250px*$vw);
+
+    position: absolute;
+    z-index: -2;
+}
+.circleBlur1 {
+    top: -500px*$vw;
+    left: -500px*$vw;
+}
+.circleBlur2 {
+    top: 500px*$vw;
+    right: -500px*$vw;
+}
+.circleBlur3 {
+    top: 2500px*$vw;
+    right: -600px*$vw;
+}
+.circleBlur4 {
+    display: none;
+}
+
+
+.main_circleBlurRoadmap {
+    width: 502px*$vw;
+    height: 502px*$vw;
+    background: #DA0C28;
+    filter: blur(125px*$vw);
+
+    position: absolute;
+    z-index: -2;
+}
+.circleBlurRoadmap4 {
+    bottom: 2500px*$vw;
+    left: -300px*$vw;
+}
+.circleBlurRoadmap5 {
+    bottom: 2500px*$vw;
+    right: -300px*$vw;
+}
+.circleBlurRoadmap6 {
+    width: 350px*$vw;
+    height: 350px*$vw;
+    bottom: 1700px*$vw;
+    left: 280px*$vw;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .main {
+        position: relative;
+    }
+    .main_circleBlur {
+        width: 296px*$TELvw;
+        height: 426px*$TELvw;
+        background: #DA0C28;
+        filter: blur(75px*$TELvw);
+        transform: rotate(32.41deg);
+
+        position: absolute;
+        z-index: -2;
+    }
+    .circleBlur1 {
+        top: -200px*$TELvw;
+        left: -200px*$TELvw;
+    }
+    .circleBlur2 {
+        top: 200px*$TELvw;
+        right: -200px*$TELvw;
+    }
+    .circleBlur3 {
+        top: 2300px*$TELvw;
+        left: -200px*$TELvw;
+        transform: rotate(21.01deg);
+    }
+    .circleBlur4 {
+        width: 235px*$TELvw;
+        height: 235px*$TELvw;
+        filter: blur(50px*$TELvw);
+        top: 2700px*$TELvw;
+        left: -100px*$TELvw;
+        transform: rotate(21.01deg);
+    }
+
+
+    .main_circleBlurRoadmap {
+        display: none;
+    }
+}

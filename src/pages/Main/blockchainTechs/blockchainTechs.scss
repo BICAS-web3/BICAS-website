@@ -1,0 +1,254 @@
+@import "../../../globalStyles";
+
+
+
+.BlockchainTechs {
+    width: 100%;
+    margin-top: 238px*$vw;
+    padding: 0 140px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.BlockchainTechs_bg {
+    width: 1400px*$vw;
+    height: 1800px*$vw;
+    position: absolute;
+    top: -750px*$vw;
+    left: -139px*$vw;
+    z-index: -1;
+
+    @include flex(flex, row, nowrap, center, center, unset);
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.Blockchain_techs {
+    width: 100%;
+    position: relative;
+
+    @include flex(flex, row, nowrap, space-between, flex-start, unset);
+
+    .new {
+        width: 193px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px*$vw;
+        line-height: 109.5%;
+        color: #FFFFFF;
+        padding-left: 14px*$vw;
+        border-left: 0.5px*$vw solid #FFFFFF;
+    }
+    .Blockchain_right {
+        width: 620px*$vw;
+
+        h2 {
+            width: 608px*$vw;
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px*$vw;
+            line-height: 57px*$vw;
+            color: #FFFFFF;
+            margin-bottom: 30px*$vw;
+        }
+        ul li {
+            margin-bottom: 30px*$vw;
+
+            @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+            .icon {
+                width: 28px*$vw;
+                height: 31.23px*$vw;
+                margin-right: 10px*$vw;
+
+                @include flex(flex, row, nowrap, center, center, unset);
+
+                img {
+                    width: 180%;
+                    height: 180%;
+                    object-fit: contain;
+                }
+            }
+            .text {
+                width: 560px*$vw;
+                font-family: 'Atyp Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px*$vw;
+                line-height: 25px*$vw;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.Blockchain_items {
+    width: 100%;
+    margin-top: 180px*$vw;
+
+    @include flex(flex, row, wrap, flex-start, flex-start, unset);
+
+    gap: 56px*$vw;
+
+    .Blockchain_item {
+        width: 352px*$vw;
+        height: 420px*$vw;
+        position: relative;
+        /* padding: 25px*$vw; */
+        background: rgba(218, 12, 40, 0.06);
+        box-shadow: 0px*$vw 0px*$vw 14px*$vw rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(15px*$vw);
+        border-radius: 50px*$vw;
+
+        border: double 1px*$vw transparent;
+        background-image: linear-gradient(#281C1D, #281C1D), 
+                            linear-gradient(to bottom, #DE001E, rgba(255, 255, 255, 0.15), #000);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+        .img {
+            width: 192px*$vw;
+            height: 192px*$vw;
+            position: absolute;
+            right: -40px*$vw;
+            top: -80px*$vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        h4 {
+            width: 171px*$vw;
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px*$vw;
+            line-height: 34px*$vw;
+            color: #DA0C28;
+            margin: 50px*$vw 0 0 25px*$vw;
+        }
+        .text {
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px*$vw;
+            line-height: 28px*$vw;
+            color: #FFFFFF;
+            margin: 25px*$vw;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .BlockchainTechs {
+        width: 100%;
+        margin-top: -120px*$TELvw;
+        padding: 150px*$TELvw 10px*$TELvw 15px*$TELvw 10px*$TELvw;
+        overflow: hidden;
+    }
+    .BlockchainTechs_bg {
+        width: 1400px*$TELvw*0.42;
+        height: 1800px*$TELvw*0.42;
+        position: absolute;
+        top: -750px*$TELvw*0.42;
+        left: -100px*$TELvw*0.42;
+    }
+
+    .Blockchain_techs {
+        width: 100%;
+        position: relative;
+
+        .new {
+            width: 193px*$TELvw*0.5;
+            font-size: 21px*$TELvw*0.5;
+            padding-left: 14px*$TELvw*0.5;
+            border-left: 0.5px*$TELvw*0.5 solid #FFFFFF;
+            margin-top: 200px*$TELvw;
+        }
+        .Blockchain_right {
+            width: 70%;
+            margin-top: 200px*$TELvw;
+
+            h2 {
+                width: 608px*$TELvw*0.5;
+                font-size: 50px*$TELvw*0.5;
+                line-height: 57px*$TELvw*0.5;
+                margin-bottom: 30px*$TELvw*0.5;
+            }
+            ul li {
+                margin-bottom: 30px*$TELvw*0.7;
+
+                .icon {
+                    width: 28px*$TELvw*1.5;
+                    height: 31.23px*$TELvw*1.5;
+                    margin-right: 0;
+                    margin-top: -15px*$TELvw;
+                }
+                .text {
+                    width: 560px*$TELvw*0.7;
+                    font-size: 21px*$TELvw*0.7;
+                    line-height: 25px*$TELvw*0.7;
+                }
+            }
+        }
+    }
+
+    .Blockchain_items {
+        width: 100%;
+        margin-top: 180px*$vw;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        gap: 56px*$TELvw;
+
+        .Blockchain_item {
+            width: 352px*$TELvw*0.8;
+            height: auto;
+            box-shadow: 0px*$TELvw*0.8 0px*$TELvw*0.8 14px*$TELvw*0.8 rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(15px*$TELvw*0.8);
+            border-radius: 50px*$TELvw*0.8;
+
+            border: double 1px*$TELvw*0.8 transparent;
+
+            .img {
+                width: 192px*$TELvw*0.8;
+                height: 192px*$TELvw*0.8;
+                position: absolute;
+                right: -40px*$TELvw*0.8;
+                top: -80px*$TELvw*0.8;
+            }
+            h4 {
+                width: 171px*$TELvw*0.8;
+                font-size: 28px*$TELvw*0.8;
+                line-height: 34px*$TELvw*0.8;
+                margin: 50px*$TELvw*0.8 0 0 25px*$TELvw*0.8;
+            }
+            .text {
+                font-size: 21px*$TELvw*0.8;
+                line-height: 28px*$TELvw*0.8;
+                margin: 25px*$TELvw*0.8;
+                margin-bottom: 40px*$TELvw;
+            }
+        }
+    }
+}

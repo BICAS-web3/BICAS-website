@@ -1,0 +1,192 @@
+@import "../../../globalStyles";
+
+
+
+.NoMater {
+    width: 100%;
+    padding: 0 133px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    h3 {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 57px*$vw;
+        line-height: 68px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    h2 {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 105px*$vw;
+        line-height: 152px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+.NoMater_items {
+    width: 100%;
+    margin-top: -42px*$vw;
+
+    .inner {
+        width: fit-content;
+        height: fit-content;
+        
+        @include flex(flex, row, wrap, flex-start, flex-start, unset);
+
+        gap: 15px*$vw;
+    }
+}
+.NoMater_item {
+    width: 281px*$vw;
+    height: 400px*$vw;
+    background: #281C1D;
+    box-shadow: 0px*$vw 0px*$vw 14px*$vw rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px*$vw);
+    border-radius: 50px*$vw;
+    border: double 1px*$vw transparent;
+    border-radius: 21px*$vw;
+    background-image: linear-gradient(#281C1D, #281C1D), 
+                        linear-gradient(to bottom, #DE001E, rgba(255, 255, 255, 0.15), #000);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    .img {
+        width: 90%;
+        height: 300px*$vw;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .text {
+        width: 80%;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px*$vw;
+        line-height: 24px*$vw;
+        text-align: center;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 25px*$vw;
+    }
+
+    &:nth-child(1) {
+        .img {
+            img {
+                width: 180%;
+                height: 180%;
+            }
+        }
+    }
+    &:nth-child(2) {
+        .img {
+            img {
+                margin-top: -100px*$vw;
+                margin-left: 40px*$vw;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .img {
+            img {
+                margin-top: -30px*$vw;
+                width: 160%;
+                height: 160%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .NoMater {
+        width: 100%;
+        padding: 0 10px*$TELvw;
+
+        h3 {
+            font-size: 57px*$TELvw*0.35;
+            line-height: 68px*$TELvw*0.35;
+        }
+        h2 {
+            font-size: 105px*$TELvw*0.35;
+            line-height: 152px*$TELvw*0.35;
+        }
+    }
+    .NoMater_items {
+        width: 100%;
+        height: 300px*$TELvw;
+        margin-top: -42px*$TELvw*0.5;
+        overflow-x: auto;
+
+        .inner {
+            width: fit-content;
+            height: fit-content;
+
+            @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+            gap: 15px*$TELvw*0.5;
+        }
+    }
+    .NoMater_item {
+        width: 281px*$TELvw*0.7;
+        height: 400px*$TELvw*0.7;
+        background: #281C1D;
+        box-shadow: 0px*$TELvw*0.7 0px*$TELvw*0.7 14px*$TELvw*0.7 rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(15px*$TELvw*0.7);
+        border-radius: 50px*$TELvw*0.7;
+        border: double 1px*$TELvw*0.7 transparent;
+        border-radius: 21px*$TELvw*0.7;
+
+        .img {
+            width: 90%;
+            height: 300px*$TELvw*0.7;
+        }
+
+        .text {
+            font-size: 15px*$TELvw*0.7;
+            line-height: 24px*$TELvw*0.7;
+            margin-bottom: 25px*$TELvw*0.7;
+        }
+        &:nth-child(2) {
+            .img {
+                img {
+                    margin-top: -100px*$TELvw*0.7;
+                    margin-left: 40px*$TELvw*0.7;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .img {
+                img {
+                    margin-top: -30px*$TELvw*0.7;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import "../../globalStyles";
+
+
+
+.Header {
+    width: 100%;
+    padding: 42px*$vw 133px*$vw 0 133px*$vw;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+}
+.header_logo {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px*$vw;
+    line-height: 20px*$vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header_menu {
+    width: fit-content;
+
+    @include flex(flex, row, nowrap, flex-start, center, unset);
+
+    gap: 71px*$vw;
+}
+.header_menu_btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px*$vw;
+    line-height: 20px*$vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header_burger {
+    width: 20px*$vw;
+    height: 14px*$vw;
+    cursor: pointer;
+
+    @include flex(flex, column, nowrap, space-between, center, unset);
+
+    div {
+        width: 100%;
+        height: 2px*$vw;
+        background-color: #fff;
+        border-radius: 1px*$vw;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Header {
+        width: 100%;
+        padding: 30px*$TELvw*0.5 10px*$TELvw 0 10px*$TELvw;
+    }
+    .header_logo {
+        font-size: 21px*$TELvw*0.5;
+        line-height: 20px*$TELvw*0.5;
+    }
+
+    .header_menu {
+        gap: 20px*$TELvw;
+    }
+    .header_menu_btn {
+        font-size: 21px*$TELvw*0.6;
+        line-height: 20px*$TELvw*0.6;
+    }
+    .header_burger {
+        width: 20px*$TELvw;
+        height: 14px*$TELvw;
+
+        div {
+            height: 2px*$TELvw;
+            border-radius: 1px*$TELvw;
+        }
+    }
+}

@@ -1,0 +1,171 @@
+@import "../../../globalStyles";
+
+
+
+.BicasGif2 {
+    width: 100%;
+    padding: 0 133px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.BicasGif2_text {
+    width: 100%;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+
+    span {
+        width: 532px*$vw;
+        height: fit-content;
+        display: block;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 160px*$vw;
+        line-height: 170px*$vw;
+        color: #FFFFFF;
+        margin-bottom: 42px*$vw;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 46px*$vw;
+            height: 6px*$vw;
+            background-color: #fff;
+            position: absolute;
+            top: 65%;
+            right: 0;
+        }
+    }
+    p {
+        width: 600px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px*$vw;
+        line-height: 44px*$vw;
+        color: #FFFFFF;
+    }
+}
+.BicasGif2_img {
+    width: 1393px*$vw;
+    height: 929px*$vw;
+    margin-top: -185px*$vw;
+    z-index: 2;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .BicasGif2_important {
+        width: 228px*$vw;
+        position: absolute;
+        left: 293px*$vw;
+        top: 50%;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+    }
+    .BicasGif2_important_icon {
+        width: 21px*$vw;
+        height: 21px*$vw;
+        background: #FF0404;
+        border: 1px*$vw solid #DA0C28;
+        backdrop-filter: blur(2px*$vw);
+        border-radius: 50%;
+
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px*$vw;
+        line-height: 23px*$vw;
+        text-align: center;
+        text-transform: lowercase;
+        color: #FFFFFF;
+        margin-bottom: 4px*$vw;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+    }
+    p {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px*$vw;
+        line-height: 126.1%;
+        text-transform: lowercase;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .BicasGif2 {
+        width: 100%;
+        padding: 0 10px*$TELvw;
+        padding-bottom: 200px*$TELvw;
+        margin-top: 100px*$TELvw;
+        margin-bottom: -150px*$TELvw;
+        overflow: hidden;
+    }
+    .BicasGif2_text {
+        width: 100%;
+        margin-bottom: 100px*$TELvw;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        span {
+            width: 90%;
+            font-size: 62px*$TELvw;
+            line-height: 74px*$TELvw;
+            margin-bottom: 42px*$TELvw*0.3;
+            text-align: left;
+
+            &::after {
+                width: 46px*$TELvw*0.8;
+                height: 6px*$TELvw*0.8;
+                left: 190px*$TELvw;
+            }
+        }
+        p {
+            width: 173px*$TELvw;
+            font-size: 12px*$TELvw;
+            line-height: 14px*$TELvw;
+            text-align: end;
+            align-self: flex-end;
+        }
+    }
+    .BicasGif2_img {
+        width: 1393px*$TELvw*0.45;
+        height: 929px*$TELvw*0.45;
+        margin-top: 0;
+        position: relative;
+        z-index: -1;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        img {
+            width: 210%;
+            height: 210%;
+            object-fit: contain;
+        }
+
+        .BicasGif2_important {
+            display: none;
+        }
+    }
+}

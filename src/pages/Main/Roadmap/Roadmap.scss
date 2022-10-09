@@ -1,0 +1,278 @@
+@import "../../../globalStyles";
+
+
+
+.Roadmap {
+    width: 100%;
+    margin-top: 100px*$vw;
+    padding: 0 134px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    .title {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 57px*$vw;
+        line-height: 68px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 90px*$vw;
+        align-self: flex-end;
+    }
+}
+
+.Roadmap_content {
+    width: 100%;
+    position: relative;
+
+    @include flex(flex, row, wrap, space-between, flex-end, unset);
+
+    gap: 10px*$vw 247px*$vw;
+
+    .Roadmap_Line {
+        width: 1389.5px*$vw;
+        height: 1308.4px*$vw;
+        position: absolute;
+        top: 264px*$vw;
+        left: -134px*$vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .year {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px*$vw;
+        line-height: 39px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        position: absolute;
+    }
+    .y_2022 {
+        top: 245px*$vw;
+        left: 320px*$vw;
+    }
+    .y_2023 {
+        top: 620px*$vw;
+        left: 560px*$vw;
+    }
+    .y_2024 {
+        right: -100px*$vw;
+        bottom: 230px*$vw;
+    }
+    .y_2025 {
+        right: 310px*$vw;
+        bottom: 30px*$vw;
+    }
+    .y_2026 {
+        left: 310px*$vw;
+        bottom: 30px*$vw;
+    }
+}
+.Roadmap_item {
+    width: 210px*$vw;
+    /* height: 313px*$vw; */
+    padding: 36px*$vw 5px*$vw 30px*$vw;
+    background: rgba(34, 33, 33, 0.1);
+    border: 1px*$vw solid #DA0C28;
+    backdrop-filter: blur(5px*$vw);
+    border-radius: 50px*$vw;
+
+    ul {
+        padding-left: 20px*$vw;
+        margin-bottom: 20px*$vw;
+    }
+
+    li {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px*$vw;
+        line-height: 17px*$vw;
+        color: #FFFFFF;
+        position: relative;
+
+        &:after {
+            content: '-';
+            position: absolute;
+            left: -15px*$vw;
+            top: 0;
+
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px*$vw;
+            line-height: 17px*$vw;
+            color: #FF0000;
+        }
+    }
+    .Roadmap_item_title {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px*$vw;
+        line-height: 43px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px*$vw 0px*$vw 5px*$vw #FFFFFF;
+    }
+
+    &:nth-child(5) {
+        margin-left: 236px*$vw;
+        position: relative;
+        left: 499px*$vw;
+    }
+    &:nth-child(6) {
+        margin-right: 236px*$vw;
+        position: relative;
+        right: 499px*$vw;
+    }
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+        margin-top: 100px*$vw;
+    }
+    &:nth-child(10),
+    &:nth-child(12) {
+        margin-top: 40px*$vw;
+        position: relative;
+    }
+    &:nth-child(10) {
+        left: 970px*$vw;
+    }
+    &:nth-child(12) {
+        right: 970px*$vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Roadmap {
+        width: 100%;
+        margin-top: 100px*$TELvw;
+        padding: 0 134px*$vw;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        .title {
+            font-size: 57px*$vw;
+            line-height: 68px*$vw;
+            margin-bottom: 30px*$TELvw;
+            align-self: flex-end;
+        }
+    }
+
+    .Roadmap_content {
+        width: 100%;
+        position: relative;
+
+        @include flex(flex, row, wrap, space-between, flex-end, unset);
+
+        gap: 10px*$vw 10px*$TELvw;
+
+        .Roadmap_Line {
+            width: 1389.5px*$vw;
+            height: 1800px*$vw;
+            position: absolute;
+            top: 140px*$TELvw;
+            left: -134px*$vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+                /* object-fit: contain; */
+            }
+        }
+
+        .year {
+            display: none;
+        }
+    }
+    .Roadmap_item {
+        width: 85px*$TELvw;
+        height: auto;
+        border: 1px*$TELvw solid #DA0C28;
+        backdrop-filter: blur(5px*$TELvw);
+        border-radius: 25px*$TELvw;
+
+        ul {
+            padding-left: 15px*$TELvw;
+            margin-bottom: 20px*$TELvw;
+        }
+
+        li {
+            font-size: 5px*$TELvw*1.2;
+            line-height: 6px*$TELvw*1.2;
+
+            &:after {
+                content: '-';
+                left: -10px*$TELvw;
+                font-size: 14px*$TELvw;
+                line-height: 17px*$TELvw;
+            }
+        }
+        .Roadmap_item_title {
+            font-size: 36px*$TELvw*0.3;
+            line-height: 43px*$TELvw*0.3;
+            text-shadow: 0px*$TELvw*0.3 0px*$TELvw*0.3 5px*$TELvw*0.3 #FFFFFF;
+        }
+
+        &:nth-child(5) {
+            margin-left: 0;
+            position: relative;
+            left: 0;
+        }
+        &:nth-child(6) {
+            margin-right: 0;
+            position: relative;
+            right: 0;
+        }
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9) {
+            margin-top: 40px*$TELvw;
+        }
+        &:nth-child(10),
+        &:nth-child(12) {
+            margin-top: 0;
+            position: relative;
+        }
+        &:nth-child(11),
+        &:nth-child(12) {
+            margin-top: 20px*$TELvw;
+        }
+        &:nth-child(10) {
+            left: 0;
+        }
+        &:nth-child(12) {
+            left: -420px*$vw;
+        }
+        &:nth-child(11) {
+            position: relative;
+            right: -850px*$vw;
+        }
+    }
+}

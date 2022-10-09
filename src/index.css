@@ -1,0 +1,765 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+	text-decoration-thickness: 1px;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration-style: dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Regular.eot');
+    src: local('Atyp Display'), local('AtypDisplay-Regular'),
+        url('./assets/fonts/Atyp/AtypDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Regular.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-ThinItalic.eot');
+    src: local('Atyp Display Thin Italic'), local('AtypDisplay-ThinItalic'),
+        url('./assets/fonts/Atyp/AtypDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-ThinItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-ThinItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Semibold.eot');
+    src: local('Atyp Display Semibold'), local('AtypDisplay-Semibold'),
+        url('./assets/fonts/Atyp/AtypDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Semibold.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-BoldItalic.eot');
+    src: local('Atyp Display Bold Italic'), local('AtypDisplay-BoldItalic'),
+        url('./assets/fonts/Atyp/AtypDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-BoldItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Thin.eot');
+    src: local('Atyp Display Thin'), local('AtypDisplay-Thin'),
+        url('./assets/fonts/Atyp/AtypDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Thin.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Thin.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-BoldItalic.eot');
+    src: local('Atyp Text Bold Italic'), local('AtypText-BoldItalic'),
+        url('./assets/fonts/Atyp/AtypText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-BoldItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Italic.eot');
+    src: local('Atyp Display Italic'), local('AtypDisplay-Italic'),
+        url('./assets/fonts/Atyp/AtypDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Italic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-SemiboldItalic.eot');
+    src: local('Atyp Display Semibold Italic'), local('AtypDisplay-SemiboldItalic'),
+        url('./assets/fonts/Atyp/AtypDisplay-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-SemiboldItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Light.eot');
+    src: local('Atyp Display Light'), local('AtypDisplay-Light'),
+        url('./assets/fonts/Atyp/AtypDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Light.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Light.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Medium.eot');
+    src: local('Atyp Display Medium'), local('AtypDisplay-Medium'),
+        url('./assets/fonts/Atyp/AtypDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Medium.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-LightItalic.eot');
+    src: local('Atyp Display Light Italic'), local('AtypDisplay-LightItalic'),
+        url('./assets/fonts/Atyp/AtypDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-LightItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Bold.eot');
+    src: local('Atyp Text Bold'), local('AtypText-Bold'),
+        url('./assets/fonts/Atyp/AtypText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Bold.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-Bold.eot');
+    src: local('Atyp Display Bold'), local('AtypDisplay-Bold'),
+        url('./assets/fonts/Atyp/AtypDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-Bold.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('./assets/fonts/Atyp/AtypDisplay-MediumItalic.eot');
+    src: local('Atyp Display Medium Italic'), local('AtypDisplay-MediumItalic'),
+        url('./assets/fonts/Atyp/AtypDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypDisplay-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypDisplay-MediumItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Thin.eot');
+    src: local('Atyp Text Thin'), local('AtypText-Thin'),
+        url('./assets/fonts/Atyp/AtypText-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Thin.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Thin.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Variable';
+    src: url('./assets/fonts/Atyp/AtypRegularVariable.eot');
+    src: local('Atyp Variable'), local('AtypRegularVariable'),
+        url('./assets/fonts/Atyp/AtypRegularVariable.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypRegularVariable.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypRegularVariable.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypRegularVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Italic.eot');
+    src: local('Atyp Text Italic'), local('AtypText-Italic'),
+        url('./assets/fonts/Atyp/AtypText-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Italic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Semibold.eot');
+    src: local('Atyp Text Semibold'), local('AtypText-Semibold'),
+        url('./assets/fonts/Atyp/AtypText-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Semibold.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-SemiboldItalic.eot');
+    src: local('Atyp Text Semibold Italic'), local('AtypText-SemiboldItalic'),
+        url('./assets/fonts/Atyp/AtypText-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-SemiboldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-SemiboldItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Regular.eot');
+    src: local('Atyp Text'), local('AtypText-Regular'),
+        url('./assets/fonts/Atyp/AtypText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Regular.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-MediumItalic.eot');
+    src: local('Atyp Text Medium Italic'), local('AtypText-MediumItalic'),
+        url('./assets/fonts/Atyp/AtypText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-MediumItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Medium.eot');
+    src: local('Atyp Text Medium'), local('AtypText-Medium'),
+        url('./assets/fonts/Atyp/AtypText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Medium.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-Light.eot');
+    src: local('Atyp Text Light'), local('AtypText-Light'),
+        url('./assets/fonts/Atyp/AtypText-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-Light.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-Light.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-LightItalic.eot');
+    src: local('Atyp Text Light Italic'), local('AtypText-LightItalic'),
+        url('./assets/fonts/Atyp/AtypText-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-LightItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atyp Text';
+    src: url('./assets/fonts/Atyp/AtypText-ThinItalic.eot');
+    src: local('Atyp Text Thin Italic'), local('AtypText-ThinItalic'),
+        url('./assets/fonts/Atyp/AtypText-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Atyp/AtypText-ThinItalic.woff2') format('woff2'),
+        url('./assets/fonts/Atyp/AtypText-ThinItalic.woff') format('woff'),
+        url('./assets/fonts/Atyp/AtypText-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Ultralight.eot');
+    src: local('Neue Machina Ultralight'), local('./assets/fonts/NeueMachina/NeueMachina-Ultralight'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultralight.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultralight.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Light.eot');
+    src: local('Neue Machina Light'), local('./assets/fonts/NeueMachina/NeueMachina-Light'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Light.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Light.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Black.eot');
+    src: local('Neue Machina Black'), local('./assets/fonts/NeueMachina/NeueMachina-Black'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Black.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Black.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Black.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Regular.eot');
+    src: local('Neue Machina Regular'), local('./assets/fonts/NeueMachina/NeueMachina-Regular'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Regular.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Regular.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Bold.eot');
+    src: local('Neue Machina Bold'), local('./assets/fonts/NeueMachina/NeueMachina-Bold'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Bold.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Bold.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Medium.eot');
+    src: local('Neue Machina Medium'), local('./assets/fonts/NeueMachina/NeueMachina-Medium'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Medium.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Medium.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.eot');
+    src: local('Neue Machina Ultrabold'), local('./assets/fonts/NeueMachina/NeueMachina-Ultrabold'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.woff') format('woff'),
+        url('./assets/fonts/NeueMachina/NeueMachina-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

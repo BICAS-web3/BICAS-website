@@ -1,0 +1,173 @@
+@import "../../../globalStyles";
+
+
+
+.Team {
+    width: 100%;
+    margin-top: 142px*$vw;
+    padding: 0 135px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    h2 {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px*$vw;
+        line-height: 120px*$vw;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 42px*$vw;
+    }
+}
+.Team_members {
+    width: 100%;
+
+    @include flex(flex, row, wrap, flex-start, flex-start, unset);
+
+    gap: 40px*$vw;
+}
+.oneMember {
+    width: 264px*$vw;
+    height: 317px*$vw;
+    position: relative;
+
+    .oneMember_img {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0px*$vw 0px*$vw 13px*$vw rgba(0, 0, 0, 0.9));
+        backdrop-filter: blur(5px*$vw);
+        border-radius: 90px*$vw;
+        overflow: hidden;
+
+        border: double 1px*$vw transparent;
+        background-image: linear-gradient(#281C1D, #281C1D), 
+                            linear-gradient(to bottom, #DE001E, rgba(255, 255, 255, 0.15), #000);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &:first-child {
+        margin-left: 305px*$vw;
+    }
+    &:nth-child(2) {
+        margin-right: 305px*$vw;
+    }
+}
+.oneMember_circle {
+    width: 112.58px*$vw;
+    height: 112.58px*$vw;
+    border-radius: 50%;
+    background: linear-gradient(157.6deg, rgba(255, 0, 0, 0.6) 11.92%, rgba(255, 0, 0, 0.006) 60.12%);
+    backdrop-filter: blur(2px*$vw);
+
+    border: double 1px*$vw transparent;
+    background-image: linear-gradient(157.6deg, #9F0D0D 11.92%, #1E1E1E 60.12%), 
+                        linear-gradient(to bottom, #D90E29, #616161, #000);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    position: absolute;
+    right: -50px*$vw;
+    bottom: -50px*$vw;
+
+    @include flex(flex, row, nowrap, center, center, unset);
+
+    .name {
+        width: 39px*$vw;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px*$vw;
+        line-height: 20px*$vw;
+        color: #FFFFFF;
+        margin-top: -30px*$vw;
+    }
+    .icon {
+        width: 24px*$vw;
+        height: 24px*$vw;
+        margin-bottom: -30px*$vw;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Team {
+        width: 100%;
+        margin-top: 80px*$TELvw;
+        padding: 0 10px*$TELvw;
+
+        h2 {
+            font-size: 100px*$TELvw*0.4;
+            line-height: 120px*$TELvw*0.4;
+            margin-bottom: 42px*$TELvw*0.4;
+        }
+    }
+    .Team_members {
+        width: 100%;
+        gap: 29px*$TELvw;
+    }
+    .oneMember {
+        width: 264px*$TELvw*0.55;
+        height: 317px*$TELvw*0.55;
+        position: relative;
+
+        .oneMember_img {
+            filter: drop-shadow(0px*$TELvw*0.55 0px*$TELvw*0.55 13px*$TELvw*0.55 rgba(0, 0, 0, 0.9));
+            backdrop-filter: blur(5px*$TELvw*0.55);
+            border-radius: 90px*$TELvw*0.55;
+            border: double 1px*$TELvw*0.55 transparent;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+    .oneMember_circle {
+        width: 112.58px*$TELvw*0.55;
+        height: 112.58px*$TELvw*0.55;
+        backdrop-filter: blur(2px*$TELvw*0.55);
+        border: double 1px*$TELvw*0.55 transparent;
+        right: -50px*$TELvw*0.55;
+        bottom: -50px*$TELvw*0.55;
+
+        .name {
+            width: 39px*$TELvw*0.55;
+            font-size: 17px*$TELvw*0.55;
+            line-height: 20px*$TELvw*0.55;
+            margin-top: -30px*$TELvw*0.55;
+        }
+        .icon {
+            width: 24px*$TELvw*0.55;
+            height: 24px*$TELvw*0.55;
+            margin-bottom: -30px*$TELvw*0.55;
+        }
+    }
+}
