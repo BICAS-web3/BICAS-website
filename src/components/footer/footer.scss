@@ -251,7 +251,7 @@
             }
 
             .FNavSocialTitle {
-                margin-top: 70px*$TELvw;
+                margin-top: 50px*$TELvw;
             }
 
             .socials {
@@ -259,12 +259,18 @@
 
                 @include flex(flex, column, nowrap, flex-start, center, unset);
 
-                gap: 42px*$TELvw;
+                gap: 0px*$TELvw;
 
                 .footer_social {
-                    width: 20px*$TELvw;
-                    height: 22px*$TELvw;
+                    width: 20px*$TELvw*2;
+                    height: 22px*$TELvw*2;
                     padding-left: 15px*$TELvw;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
                 }
             }
 
