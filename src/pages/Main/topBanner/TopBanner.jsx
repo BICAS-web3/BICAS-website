@@ -26,14 +26,17 @@ export default function TopBanner() {
                 </div>
                 <div className="right">
                     <p>play more - <br/> get more</p>
-                    <Btn1
-                        text={'white paper'}
-                        func={() => { }}
-                        style={{
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                            border: '1px solid #FFFFFF',
-                        }}
-                    />
+                    <a href="https://bcss-organization.gitbook.io/whitepaper-bicas-eng/">
+                        <Btn1
+                            text={'white paper'}
+                            func={() => { }}
+                            style={{
+                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                border: '1px solid #FFFFFF',
+                            }}
+                        />
+                    </a>
+                    
                 </div>
             </div>
 
