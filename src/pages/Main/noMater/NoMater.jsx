@@ -7,12 +7,12 @@ export default function NoMater() {
         {
             id: 1,
             img: 'NoMaterImg1.png',
-            title: 'FAIR ENVIRONMENT WITH RELIABLE RULES AND GUARANTEED PAYOUTS',
+            title: 'FAIR ENVIRONMENT WITH RELIABLE RULES',
         },
         {
             id: 2,
             img: 'NoMaterImg2.png',
-            title: 'FAIR ENVIRONMENT WITH RELIABLE RULES AND GUARANTEED PAYOUTS',
+            title: 'EASY QUICK AND GUARANTEED PAYOUTS',
         },
         {
             id: 3,
@@ -22,7 +22,7 @@ export default function NoMater() {
         {
             id: 4,
             img: 'NoMaterImg4.png',
-            title: 'TARGET BCS TOKENS IN OUR "META MINER" GAME',
+            title: 'TARGET BICS TOKENS IN OUR "META MINER" GAME',
         },
     ]
 
