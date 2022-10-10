@@ -49,7 +49,7 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
 
@@ -77,22 +77,36 @@
     right: -50px*$vw;
     bottom: -50px*$vw;
 
-    @include flex(flex, row, nowrap, center, center, unset);
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
 
     .name {
-        width: 39px*$vw;
+        margin-top: 20px*$vw;
+    }
+    .name,
+    .place {
+        width: 70px*$vw;
         font-family: 'Atyp Display';
         font-style: normal;
         font-weight: 400;
-        font-size: 17px*$vw;
-        line-height: 20px*$vw;
+        font-size: 17px*$vw*0.7;
+        line-height: 20px*$vw*0.7;
+        text-align: left;
         color: #FFFFFF;
-        margin-top: -30px*$vw;
+        padding-left: 13px*$vw;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+    }
+    .place {
+        font-weight: 600;
+        white-space: nowrap;
     }
     .icon {
         width: 24px*$vw;
         height: 24px*$vw;
         margin-bottom: -30px*$vw;
+        margin-top: 10px*$vw;
+        margin-right: 30px*$vw;
+        align-self: flex-end;
 
         @include flex(flex, row, nowrap, center, center, unset);
 
@@ -159,14 +173,21 @@
         bottom: -50px*$TELvw*0.55;
 
         .name {
-            width: 39px*$TELvw*0.55;
-            font-size: 17px*$TELvw*0.55;
-            line-height: 20px*$TELvw*0.55;
-            margin-top: -30px*$TELvw*0.55;
+            width: 50px*$TELvw;
+            font-size: 8px*$TELvw;
+            line-height: 12px*$TELvw;
+            margin-top: 5px*$TELvw;
+            padding-left: 8px*$TELvw;
+        }
+        .place {
+            padding-left: 8px*$TELvw;
+            font-size: 8px*$TELvw*0.8;
+            line-height: 12px*$TELvw*0.8;
         }
         .icon {
             width: 24px*$TELvw*0.55;
             height: 24px*$TELvw*0.55;
+            margin-top: -2px*$TELvw;
             margin-bottom: -30px*$TELvw*0.55;
         }
     }

@@ -5,6 +5,9 @@ import Logo from "../../assets/img/Logo.svg"
 import twitter from "../../assets/img/twitter.svg"
 import inst from "../../assets/img/inst.svg"
 import social3 from "../../assets/img/social3.svg"
+import linkedin from "../../assets/img/linkedin.svg"
+import telega from "../../assets/img/telega.svg"
+
 import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -53,19 +56,29 @@ export default function Footer() {
 
                 <span className="FNavTitle FNavSocialTitle">Follow us:</span>
                 <div className="socials">
-                    <a href="#">
+                    <a href="https://twitter.com/bcs_token">
                         <div className="footer_social">
                             <img src={twitter} alt="" />
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/bicas_ecosystem/">
                         <div className="footer_social">
                             <img src={inst} alt="" />
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://medium.com/@BICAS">
                         <div className="footer_social">
                             <img src={social3} alt="" />
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/bicas/">
+                        <div className="footer_social">
+                            <img src={linkedin} alt="" />
+                        </div>
+                    </a>
+                    <a href="https://t.me/bcstoken">
+                        <div className="footer_social">
+                            <img src={telega} alt="" />
                         </div>
                     </a>
                 </div>
