@@ -1,0 +1,146 @@
+@import "../../../globalStyles";
+
+
+
+
+
+.Investments {
+    width: 100%;
+    padding: 0 134px*$vw;
+    margin-bottom: 100px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+
+    .Investments_currVolume {
+        width: 100%;
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px*$vw;
+        line-height: 28px*$vw;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 42px*$vw;
+        position: relative;
+        top: 15px*$vw;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        span {
+            color: #DA0C28;
+            margin-left: 5px*$vw;
+        }
+    }
+}
+.Invest_diagram {
+    width: 575px*$vw;
+    height: 320px*$vw;
+    background: #161616;
+    border: 0.5px*$vw solid #101010;
+    box-shadow: 0px*$vw 4px*$vw 4px*$vw rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px*$vw);
+    border-radius: 20px*$vw;
+    text-align: center;
+
+    @include flex(flex, column, nowrap, center, center, unset);
+    
+    img {
+        width: 100%;
+        height: 120%;
+        object-fit: contain;
+        margin-bottom: -30px*$vw;
+    }
+}
+.Invest_text {
+    width: 500px*$vw;
+
+    @include flex(flex, column, nowrap, center, center, unset);
+
+    span {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px*$vw;
+        line-height: 42px*$vw;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:first-child {
+            align-self: flex-start;
+        }
+        &:nth-child(3) {
+            align-self: flex-end;
+            margin-right: -50px*$vw;
+        }
+    }
+    h3 {
+        font-family: 'Atyp Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px*$vw;
+        line-height: 90%;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        text-shadow: 0px*$vw 0px*$vw 10px*$vw rgba(254, 5, 36, 0.5);
+        text-shadow: rgba(255, 0, 0, 0.99) 1px*$vw 0px*$vw, rgba(255, 0, 0, 0.99) 1px*$vw 1px*$vw, rgba(255, 0, 0, 0.99) 0px*$vw 1px*$vw, rgba(255, 0, 0, 0.99) -1px*$vw 1px*$vw, rgba(255, 0, 0, 0.99) -1px*$vw 0px*$vw, rgba(255, 0, 0, 0.99) -1px*$vw -1px*$vw, rgba(255, 0, 0, 0.99) 0px*$vw -1px*$vw, rgba(255, 0, 0, 0.99) 1px*$vw -1px*$vw;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .Investments {
+        width: 100%;
+        padding: 0 134px*$vw;
+        margin-top: 70px*$TELvw;
+        margin-bottom: 70px*$TELvw;
+
+        @include flex(flex, column-reverse, nowrap, flex-start, center, unset);
+
+        .Investments_currVolume {
+            width: 100%;
+            font-size: 23px*$TELvw*0.8;
+            line-height: 28px*$TELvw*0.8;
+            margin-top: 42px*$TELvw*0.3;
+            top: 15px*$TELvw*0.6;
+
+            span {
+                margin-left: 5px*$TELvw*0.6;
+            }
+        }
+    }
+    .Invest_diagram {
+        width: 575px*$TELvw*0.6;
+        height: 297px*$TELvw*0.7;
+        border: 0.5px*$TELvw*0.6 solid #101010;
+        box-shadow: 0px*$TELvw*0.6 4px*$TELvw*0.6 4px*$TELvw*0.6 rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(2px*$TELvw*0.6);
+        border-radius: 20px*$TELvw*0.6;
+
+        img {
+            margin-bottom: -75px*$TELvw*0.51;
+        }
+    }
+    .Invest_text {
+        width: 90%;
+        margin-bottom: 30px*$TELvw;
+
+        @include flex(flex, column, nowrap, center, center, unset);
+
+        span {
+            font-size: 35px*$TELvw*0.6;
+            line-height: 42px*$TELvw*0.6;
+
+            &:nth-child(3) {
+                margin-right: -50px*$TELvw*0.6;
+            }
+        }
+        h3 {
+            font-size: 64px*$TELvw*0.6;
+            text-shadow: 0px*$TELvw*0.6 0px*$TELvw*0.6 10px*$TELvw*0.6 rgba(254, 5, 36, 0.5);
+            text-shadow: rgba(255, 0, 0, 0.99) 1px*$TELvw*0.6 0px*$TELvw*0.6, rgba(255, 0, 0, 0.99) 1px*$TELvw*0.6 1px*$TELvw*0.6, rgba(255, 0, 0, 0.99) 0px*$TELvw*0.6 1px*$TELvw*0.6, rgba(255, 0, 0, 0.99) -1px*$TELvw*0.6 1px*$TELvw*0.6, rgba(255, 0, 0, 0.99) -1px*$TELvw*0.6 0px*$TELvw*0.6, rgba(255, 0, 0, 0.99) -1px*$TELvw*0.6 -1px*$TELvw*0.6, rgba(255, 0, 0, 0.99) 0px*$TELvw*0.6 -1px*$TELvw*0.6, rgba(255, 0, 0, 0.99) 1px*$TELvw*0.6 -1px*$TELvw*0.6;
+        }
+    }
+}

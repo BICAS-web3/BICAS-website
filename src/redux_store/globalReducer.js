@@ -11,7 +11,6 @@ export const globalReducer = createSlice({
             email: 'eaf.fond@help.com',
             address: 'London, 45 Maydwell House',
         },
-
     },
     reducers: {
         

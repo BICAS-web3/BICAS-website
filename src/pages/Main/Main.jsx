@@ -8,12 +8,15 @@ import Team from './Team/Team'
 import TopBanner from './topBanner/TopBanner'
 import Roadmap from './Roadmap/Roadmap'
 import JoinRevolution from './JoinRevolution/JoinRevolution'
+import Investments from './investments/Investments'
 
 export default function Main() {
+
   return (
     <main className="main">
       <TopBanner/>
       <BicasGif2/>
+      <Investments/>
       <NoMater/>
       <SolidProduct/>
       <BlockchainTechs/>

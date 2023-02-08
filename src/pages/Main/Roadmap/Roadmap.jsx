@@ -134,8 +134,31 @@ export default function Roadmap() {
         },
     ]
 
+    /* let [img, setimg] = useState(null)
+
+    window.addEventListener("orientationchange", function () {
+        // console.log(window.innerWidth)
+        if (window.innerWidth <= 500 || window.orientation === 90) {
+            setimg(<img src={gifImg2} alt="" />)
+            console.log('window.innerWidth > 500 || window.orientation == 90', window.orientation, window.innerWidth)
+        } else if (window.innerWidth > 500 || window.orientation === 0) {
+            setimg(<img src={gifImg2_mob} alt="" />)
+            console.log('window.innerWidth <= 500 || window.orientation == 0')
+        }
+    }, false)
+
+    useEffect(() => {
+        if (window.innerWidth > 500 || window.orientation === 90) {
+            setimg(<img src={gifImg2} alt="" />)
+            console.log('useEffect___window.innerWidth > 500 || window.orientation == 90')
+        } else if (window.innerWidth <= 500 || window.orientation === 0) {
+            setimg(<img src={gifImg2_mob} alt="" />)
+            console.log('useEffect___window.innerWidth <= 500 || window.orientation == 0')
+        }
+    }, []) */
+
     return (
-        <div className="Roadmap">
+        <div className="Roadmap" id="Roadmap">
             <h3 className="title">road map</h3>
 
             <div className="Roadmap_content">

@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import "./Team.scss"
 
-import iconLinkedin from "../../../assets/img/icon-linkedin.svg"
+import iconLinkedin from "../../../assets/img/linkedin.svg"
 
 export default function Team() {
 
@@ -44,10 +43,10 @@ export default function Team() {
         },
         {
             id: 6,
-            memberName: 'Alexey Karanyuk',
-            place: '',
-            img: 'alexey.jpg',
-            linkedInLink: 'https://www.linkedin.com/',
+            memberName: 'Nikita Gradinar',
+            place: 'Team Lead',
+            img: 'nikita.jpg',
+            linkedInLink: 'https://www.linkedin.com/mwlite/in/%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B0-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0%D1%80%D1%8C-2a70b5252',
         },
         {
             id: 7,
@@ -58,17 +57,17 @@ export default function Team() {
         },
         {
             id: 8,
-            memberName: 'Nikita Gradinar',
-            place: 'UI UX Designer',
-            img: 'nikita.jpg',
-            linkedInLink: 'https://www.linkedin.com/mwlite/in/%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B0-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0%D1%80%D1%8C-2a70b5252',
-        },
-        {
-            id: 9,
             memberName: 'Vladimir Mavrodi',
             place: 'Developer',
             img: 'vovchik.jpg',
             linkedInLink: 'https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%BC%D0%B0%D0%B2%D1%80%D0%BE%D0%B4%D0%B8-35a090147/',
+        },
+        {
+            id: 9,
+            memberName: 'Adrian Hortolomei',
+            place: '3D Designer',
+            img: 'adrian.jpg',
+            linkedInLink: 'https://www.linkedin.com/in/adrian-hortolomei-5044a824a/',
         },
         {
             id: 10,
@@ -80,7 +79,7 @@ export default function Team() {
     ]
 
     return (
-        <div className="Team">
+        <div className="Team" id="team">
             <h2 className="title">executive Team</h2>
 
             <div className="Team_members">

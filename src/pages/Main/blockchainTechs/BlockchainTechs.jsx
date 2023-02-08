@@ -42,7 +42,7 @@ export default function BlockchainTechs() {
     ]
 
     return (
-        <div className="BlockchainTechs">
+        <div className="BlockchainTechs" id="advantages">
             <div className="Blockchain_techs">
                 <div className="BlockchainTechs_bg">
                     <img src={BlockchainTechs_bg} alt="" />

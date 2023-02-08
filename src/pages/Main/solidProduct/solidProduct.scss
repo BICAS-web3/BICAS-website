@@ -191,6 +191,10 @@
         .left {
             font-size: 25px*$TELvw;
             line-height: 24px*$TELvw;
+
+            span {
+                font-weight: 700;
+            }
         }
         .right {
             width: 127px*$TELvw*0.5;
@@ -228,6 +232,7 @@
         margin-top: 20px*$TELvw;
 
         .text {
+            font-weight: 500;
             font-size: 15px*$TELvw;
             line-height: 20px*$TELvw;
             text-align: start;

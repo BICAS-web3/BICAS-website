@@ -9,6 +9,7 @@
 .main_circleBlur {
     width: 940px*$vw;
     height: 943px*$vw;
+    border-radius: 50%;
     background: #DA0C28;
     filter: blur(250px*$vw);
 
@@ -35,6 +36,7 @@
 .main_circleBlurRoadmap {
     width: 502px*$vw;
     height: 502px*$vw;
+    border-radius: 50%;
     background: #DA0C28;
     filter: blur(125px*$vw);
 

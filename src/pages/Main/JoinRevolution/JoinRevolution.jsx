@@ -11,7 +11,7 @@ export default function JoinRevolution() {
 
             <div className="JoinRevolution_btn">
                 <Btn1
-                    text={'join the ecosystem'}
+                    text={'coming soon'}
                     func={() => { }}
                     style={{
                         backgroundColor: '#FE0524',

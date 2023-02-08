@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Main from './pages/Main/Main';
 
 import ScrollToTop from "./components/ui/ScrollToTop";
+import Test from './pages/Test/Test';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         </Routes>
 
         <Footer/>
+
+        {/* <Test/> */}
 
       </BrowserRouter>
     </div>

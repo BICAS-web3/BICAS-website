@@ -4,7 +4,7 @@ import "./footer.scss"
 import Logo from "../../assets/img/Logo.svg"
 import twitter from "../../assets/img/twitter.svg"
 import inst from "../../assets/img/inst.svg"
-import social3 from "../../assets/img/social3.svg"
+import medium from "../../assets/img/medium.svg"
 import linkedin from "../../assets/img/linkedin.svg"
 import telega from "../../assets/img/telega.svg"
 
@@ -42,16 +42,13 @@ export default function Footer() {
             </div>
             <div className="column colDevelopers_mb">
                 <span className="FNavTitle">Developers:</span>
-                <a href="#"><span className="FNavLink">White Paper</span></a>
+                <a href="https://bcss-organization.gitbook.io/whitepaper-bicas-eng/" target="_blank"><span className="FNavLink">White Paper</span></a>
                 <a href="#"><span className="FNavLink">Bug Bounty</span></a>
                 <a href="#"><span className="FNavLink">Bicas License</span></a>
-
-                <a className="privacyPolicy FNavLink" href="#"><span>Privacy Policy</span></a>
             </div>
             <div className="column colContacts_mb">
                 <span className="FNavTitle">Contact us:</span>
-                <a href="#"><span className="FNavLink">support@****.io</span></a>
-                <a href="#"><span className="FNavLink">support@****.io</span></a>
+                <a href="mailto:info@bicas.io"><span className="FNavLink">info@bicas.io</span></a>
                 
 
                 <span className="FNavTitle FNavSocialTitle">Follow us:</span>
@@ -68,7 +65,7 @@ export default function Footer() {
                     </a>
                     <a href="https://medium.com/@BICAS">
                         <div className="footer_social">
-                            <img src={social3} alt="" />
+                            <img src={medium} alt="" />
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/company/bicas/">

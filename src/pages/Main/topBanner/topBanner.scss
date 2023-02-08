@@ -46,6 +46,9 @@
         }
     }
 }
+.topBanner_bicas {
+    display: none;
+}
 .TopBanner_btns {
     width: 100%;
 
@@ -137,11 +140,26 @@
         margin-top: 200px*$TELvw;
         margin-bottom: 42px*$TELvw;
 
+        .topBanner_bicas {
+            display: block;
+            font-family: 'Atyp Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 9px*$TELvw;
+            line-height: 14px*$TELvw;
+            text-align: center;
+            letter-spacing: 0.8em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: relative;
+            top: -170px*$TELvw;
+        }
+
         .title {
             width: 218px*$TELvw;
             font-size: 22px*$TELvw;
             line-height: 22px*$TELvw;
-            padding-bottom: 70px*$TELvw;
+            padding-bottom: 58px*$TELvw;
             align-self: flex-start;
 
             span {
@@ -153,7 +171,7 @@
             .left,
             .right {
                 font-size: 50px*$TELvw !important;
-                line-height: 70px*$TELvw !important;
+                line-height: 50px*$TELvw !important;
             }
             .right {
                 left: 160px*$TELvw;
@@ -179,6 +197,10 @@
                 font-size: 14px*$TELvw;
                 line-height: 17px*$TELvw;
             }
+
+            .Btn1 {
+                padding: 16px*$TELvw 37px*$TELvw;
+            }
         }
         .right {
             width: 40%;
@@ -197,6 +219,9 @@
                 color: #fff;
                 margin-top: 20px*$TELvw;
             }
+            .Btn1 {
+                padding: 16px*$TELvw 37px*$TELvw;
+            }
         }
     }
 
@@ -211,7 +236,7 @@
         width: 649.45px*$TELvw;
         height: 691px*$TELvw;
         position: absolute;
-        top: -400px*$TELvw;
+        top: -320px*$TELvw;
         left: -80px*$TELvw;
         z-index: -1;
     }

@@ -15,7 +15,7 @@ export default function SolidProduct() {
             </div>
             <div className="SolidProduct_gambling">
                 <div className="SolidProduct_row1">
-                    <h2 className="left">SOLID PRODUCT - GAMBLING</h2>
+                    <h2 className="left"><span>SOLID PRODUCT -</span> GAMBLING</h2>
                     <p className="right">А SOLID PRODUCT</p>
                 </div>
                 <div className="SolidProduct_row2">

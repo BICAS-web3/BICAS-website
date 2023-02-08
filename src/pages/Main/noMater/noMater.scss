@@ -23,7 +23,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 105px*$vw;
-        line-height: 152px*$vw;
+        line-height: 105px*$vw;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -31,7 +31,7 @@
 }
 .NoMater_items {
     width: 100%;
-    margin-top: -42px*$vw;
+    margin-top: -17px*$vw;
 
     .inner {
         width: fit-content;
@@ -45,22 +45,20 @@
 .NoMater_item {
     width: 281px*$vw;
     height: 400px*$vw;
-    background: #281C1D;
-    box-shadow: 0px*$vw 0px*$vw 14px*$vw rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(15px*$vw);
     border-radius: 50px*$vw;
     border: double 1px*$vw transparent;
     border-radius: 21px*$vw;
-    background-image: linear-gradient(#281C1D, #281C1D), 
-                        linear-gradient(to bottom, #DE001E, rgba(255, 255, 255, 0.15), #000);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    margin-top: -40px*$vw;
+
+    position: relative;
+    z-index: 1;
 
     @include flex(flex, column, nowrap, flex-start, center, unset);
 
     .img {
         width: 90%;
         height: 300px*$vw;
+        margin-top: 20px*$vw;
 
         @include flex(flex, row, nowrap, center, center, unset);
 
@@ -111,7 +109,35 @@
         }
     }
 }
+.NoMater_item_bg {
+    width: 281px*$vw*1.09;
+    height: 400px*$vw*1.09;
+    position: absolute;
+    top: 0px*$vw;
+    z-index: -1;
 
+    /* clip-path: url(#svgTextPath);
+    filter: blur(10px); */
+    
+
+    @include flex(flex, row, nowrap, center, center, unset);
+
+    svg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    &::after {
+        content: '';
+        width: 281px*$vw;
+        height: 350px*$vw;
+        position: absolute;
+        top: 40px*$vw;
+        backdrop-filter: blur(15px*$vw);
+        border-radius: 50px*$vw;
+    }
+}
 
 
 
@@ -130,18 +156,18 @@
         padding: 0 10px*$TELvw;
 
         h3 {
-            font-size: 57px*$TELvw*0.35;
-            line-height: 68px*$TELvw*0.35;
+            font-size: 57px*$TELvw*0.30;
+            line-height: 68px*$TELvw*0.30;
         }
         h2 {
-            font-size: 105px*$TELvw*0.35;
-            line-height: 152px*$TELvw*0.35;
+            font-size: 105px*$TELvw*0.30;
+            line-height: 50px*$TELvw*0.30;
         }
     }
     .NoMater_items {
         width: 100%;
         height: auto;
-        margin-top: -42px*$TELvw*0.5;
+        margin-top: 15px*$TELvw*0.5;
         /* overflow-x: auto; */
 
         .inner {
@@ -153,15 +179,16 @@
             gap: 11px*$TELvw;
         }
     }
+
     .NoMater_item {
         width: 154px*$TELvw;
         height: 210px*$TELvw;
-        /* background: #281C1D; */
-        box-shadow: 0px*$TELvw*0.7 0px*$TELvw*0.7 14px*$TELvw*0.7 rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(15px*$TELvw*0.7);
         border-radius: 50px*$TELvw*0.7;
         border: double 1px*$TELvw*0.7 transparent;
         border-radius: 21px*$TELvw*0.7;
+        margin-top: -40px*$vw;
+        position: relative;
+        z-index: 1;
 
         .img {
             width: 90%;
@@ -204,6 +231,32 @@
                     height: 150%;
                 }
             }
+        }
+
+    }
+    .NoMater_item_bg {
+        width: 281px*$TELvw*0.55*1.09;
+        height: 400px*$TELvw*0.55*1.09;
+        position: absolute;
+        top: -30px*$TELvw*0.55;
+        z-index: -1;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        svg {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        &::after {
+            content: '';
+            width: 281px*$TELvw*0.55;
+            height: 350px*$TELvw*0.55;
+            position: absolute;
+            top: 40px*$TELvw*0.55;
+            backdrop-filter: blur(15px*$TELvw*0.55);
+            border-radius: 50px*$TELvw*0.55;
         }
     }
 }
